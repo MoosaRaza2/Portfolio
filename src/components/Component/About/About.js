@@ -14,7 +14,7 @@ const About = () => {
                             <h2 className='f-os'>About Me</h2>
                             <div className="hr"></div>
                             <div className="content f-po">
-                                <p>Full Stack Web Developer and Web Application specializing in Front-End & Back-End Development. Experienced with all stages of the development cycle for dynamic websites and software. Well-versed in numerous programming languages and necessaries like JavaScript ES6, NodeJS, Structured language HTML55, CSS3, Libraries ReactJS with MongoDB and MySQL Database. Building an authenticated REST API with JWT. Smooth manageable CRUD & debugging operations.</p>
+                                <p>Hello, my name is Moosa Raza, and I am a full-stack developer with experience in MERN stack development and Shopify theme customization. I have a strong understanding of React, Node.js, Express, and MongoDB, and have used these technologies to build dynamic and responsive web applications. Additionally, I have experience with Shopify platform and can customize existing themes or create new ones to meet the specific needs of my clients. I am always looking for new challenges and opportunities to expand my skills. Let's build something great together.</p>
                                 <p>I’m passionate about helping clients to conquer their design challenges and achieve their business goals. I am committed to creating inspiring design solutions, and customizations to help build the growth and success of your company. Whether you have a small or mid-sized business and others.</p>
                                 <div className="left-btn">
                                     <Link to="/files/resume.pdf" target="_blank" download><button>DOWNLOAD MY RESUME</button></Link>
@@ -43,7 +43,7 @@ const About = () => {
                                         <li><img src={require("../../../images/icons/expressJS.png")} alt="" /></li>
                                         <li><img src={require("../../../images/icons/mongodb.png")} alt="" /></li>
                                         <li><img src={require("../../../images/icons/jwt.png")} alt="" /></li>
-                                        <li><img src={require("../../../images/icons/psd.png")} alt="" /></li>
+                                        <li><img src={require("../../../images/icons/shopifyTheme.png")} alt="" /></li>
                                         <li><img src={require("../../../images/icons/figma.png")} alt="" /></li>
                                     </ul>
                                 </div>
@@ -66,6 +66,7 @@ const About = () => {
                     <div className="p-text">
                         <ParallaxText baseVelocity={-5}>full-stack e-commerce portfolio MERN STACK</ParallaxText>
                         <ParallaxText baseVelocity={5}>blogsite real state dashboard commercial</ParallaxText>
+                        <ParallaxText baseVelocity={-5}>Shopify Theme Development and customization</ParallaxText>
                     </div>
                 </div>
             </div>
