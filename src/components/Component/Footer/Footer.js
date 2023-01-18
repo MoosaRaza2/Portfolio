@@ -9,11 +9,11 @@ const Footer = () => {
                 <div className="hr"></div>
                 <div className="container">
                     <div className="item">
-                        <img src={require("../../../images/avater.jpg")} alt="" />
-                        <h3 className='f-os'>a<span>.</span>rony</h3>
+                        <img src={require("../../../images/dp.jpg")} alt="" />
+                        <h3 className='f-os'>Moosa<span> </span>Raza</h3>
                     </div>
                 </div>
-                <motion.span whileInView={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 1, delay: 0.4 }} className='copyright f-po'>&copy;2023 | All rights reserved.</motion.span>
+                <motion.span whileInView={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: 0.4 }} className='copyright f-po'>&copy;2023 | All rights reserved.</motion.span>
             </div>
         </footer>
     );

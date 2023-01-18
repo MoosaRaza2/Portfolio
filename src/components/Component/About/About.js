@@ -17,7 +17,7 @@ const About = () => {
                                 <p>Hello, my name is Moosa Raza, and I am a full-stack developer with experience in MERN stack development and Shopify theme customization. I have a strong understanding of React, Node.js, Express, and MongoDB, and have used these technologies to build dynamic and responsive web applications. Additionally, I have experience with Shopify platform and can customize existing themes or create new ones to meet the specific needs of my clients. I am always looking for new challenges and opportunities to expand my skills. Let's build something great together.</p>
                                 <p>I’m passionate about helping clients to conquer their design challenges and achieve their business goals. I am committed to creating inspiring design solutions, and customizations to help build the growth and success of your company. Whether you have a small or mid-sized business and others.</p>
                                 <div className="left-btn">
-                                    <Link to="/files/resume.pdf" target="_blank" download><button>DOWNLOAD MY RESUME</button></Link>
+                                    {/* <Link to="/files/resume.pdf" target="_blank" download><button>DOWNLOAD MY RESUME</button></Link> */}
                                     <a href="#contactID"><button>HIRE ME</button></a>
                                 </div>
                             </div>

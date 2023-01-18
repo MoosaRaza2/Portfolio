@@ -14,7 +14,7 @@ const Avater = () => {
                     <span className='f-os'>Muhammad Moosa Raza</span>
                 </div>
                 <div className="right">
-                    <h1 className='f-os'>  WEB
+                    <h1 className='f-os'> MERN Stack
                         <TypeAnimation
                             cursor={false}
                             sequence={[

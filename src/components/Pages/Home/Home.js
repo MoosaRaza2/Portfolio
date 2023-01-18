@@ -16,7 +16,7 @@ const Home = () => {
                 <Avater></Avater>
                 <About></About>
                 <Portfolio></Portfolio>
-                <Testimonial></Testimonial>
+                {/* <Testimonial></Testimonial> */}
                 <Contact></Contact>
             </div>
             <Footer></Footer>

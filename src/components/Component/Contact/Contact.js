@@ -5,35 +5,36 @@ import { FiFacebook, FiLinkedin } from 'react-icons/fi';
 import { TextField } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
-
+import Alert from '@mui/material/Alert';
 const Contact = () => {
     const form = useRef();
-
+    const [err, setError] = React.useState(false)
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_ayjxc6z', 'template_7krlw2y', form.current, '4BjSKxFWyhYXIl6Uy')
+        emailjs.sendForm('service_4x185fh', 'template_al6n7pe', form.current, 'NSvU4Bo6-sPgvxg41')
             .then((result) => {
                 console.log(result.text);
+                setError(true)
             }, (error) => {
                 console.log(error.text);
             });
-        e.target.reset();
+
     };
     return (
-        <section className='contact' id="contactID">
+        <section className='contact' id="contactID" style={{ marginTop: '55px' }}>
             <div className="container">
-                <motion.h2 whileInView={{ x: 0, opacity: 1}} initial={{ x: -80, opacity: 0}} transition={{duration: 1, type: 'spring', delay: 0.4 }} className="f-os sec-title">CONTACT ME</motion.h2>
+                <motion.h2 whileInView={{ x: 0, opacity: 1 }} initial={{ x: -80, opacity: 0 }} transition={{ duration: 1, type: 'spring', delay: 0.4 }} className="f-os sec-title">CONTACT ME</motion.h2>
                 <div className="hr"></div>
                 <div className="row">
                     <div className="col-md-6 col-sm-12 col-lg-5">
-                        <motion.div whileInView={{ x: 0, opacity: 1}} initial={{ x: -80, opacity: 0}} transition={{duration: 1, type: 'spring', delay: 0.4 }} className="left-card f-po">
+                        <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ x: -80, opacity: 0 }} transition={{ duration: 1, type: 'spring', delay: 0.4 }} className="left-card f-po">
                             <div className="t-img">
                                 <img src="https://i.pinimg.com/564x/3d/c7/6d/3dc76db0c5ed359dec38024a566178c3.jpg" alt="" />
                             </div>
                             <h4 className='f-os'>Muhammad Moosa Raza</h4>
                             <span>FULL STACK WEB DEVELOPER</span>
-                            <p>I am available for freelance or remote work. Connect with me via and call in to my account.</p>
+                            <p>I am available for freelance or remote work.</p>
                             <div className="contacts">
                                 <h5>Phone: <span> +9203040423558</span></h5>
                                 <h5>Email: <span> rmoosa276@gmail.com</span></h5>
@@ -48,7 +49,7 @@ const Contact = () => {
                         </motion.div>
                     </div>
                     <div className="col-md-6 col-sm-12 col-lg-7">
-                        <motion.form whileInView={{ y: 0, opacity: 1}} initial={{ y: 80, opacity: 0}} transition={{duration: 1, type: 'spring', delay: 0.4 }} ref={form} className="right-card">
+                        <motion.form whileInView={{ y: 0, opacity: 1 }} initial={{ y: 80, opacity: 0 }} transition={{ duration: 1, type: 'spring', delay: 0.4 }} ref={form} className="right-card">
                             <div>
                                 <h3>Got a <span>PROJECT IN MIND?</span></h3>
                                 <h3>Let's Talk!</h3>
@@ -70,6 +71,11 @@ const Contact = () => {
                             <div className="item">
                                 <TextField name="message" className="text-field" multiline label="MESSAGE" variant="outlined" />
                             </div>
+                            {
+                                err && (
+                                    <Alert severity="success">Email sent</Alert>
+                                )
+                            }
                             <button onClick={sendEmail} className='f-po'>SEND MESSAGE</button>
                         </motion.form>
                     </div>
