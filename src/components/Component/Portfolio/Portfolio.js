@@ -39,8 +39,8 @@ const Portfolio = () => {
                                 </div>
                                 <div class="card-bio">
                                     <FacebookShareButton quote="WolfStreet" hashtag={"#webdevelopment"} url={"https://www.facebook.com/"}><span><GrFacebookOption className='icon' /></span></FacebookShareButton>
-                                    <a target={'_blank'} href="https://ahmed-rony.github.io/Arch/"><span><BiLink className='icon' /></span></a>
-                                    <a target={'_blank'} href="https://github.com/ahmed-rony/Arch"><span><FaGithubAlt className='icon' /></span></a>
+                                    <a target={'_blank'} href="https://moosa-wolf-street.netlify.app/"><span><BiLink className='icon' /></span></a>
+                                    <a target={'_blank'} href="https://github.com/MoosaRaza2/WolfStreet"><span><FaGithubAlt className='icon' /></span></a>
                                 </div>
                             </div>
                         </div>
